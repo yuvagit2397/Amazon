@@ -1,0 +1,66 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-13T06:59:40.842Z",
+        "line": 2,
+        "name": "searching mobiles",
+        "description": "",
+        "id": "amazon-product-search;searching-mobiles",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10985000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user is on amazon search page",
+            "match": {
+              "location": "stepdefinitions.AmazonProductSearchDefinition.user_is_on_amazon_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 833000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user enters searchterm \"iphones\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphones\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.AmazonProductSearchDefinition.user_enters_searchterm(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2498000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user get the name and price of the products",
+            "match": {
+              "location": "stepdefinitions.AmazonProductSearchDefinition.user_get_the_name_and_price_of_the_cart_products()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Amazon product search",
+    "description": "",
+    "id": "amazon-product-search",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/featureFiles/AmazonProductSearch.feature",
+    "tags": []
+  }
+]
